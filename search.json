@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Open Urban Air and Meteorological",
+    "section": "🧠 Overview",
+    "text": "🧠 Overview\nThis repository hosts the open, reproducible materials developed for the article submitted to Applied Sciences (MDPI, 2025):\n📄 Article\nCáceres-Tello, J. & Galán-Hernández, J.J. (2025).\nCitizen Science and STEM Education with R: Teaching Innovation through Open Urban Climate Data.\nApplied Sciences (MDPI).\nDOI: 10.3390/app152212183\nThe project demonstrates how R, Quarto, and open environmental datasets can be integrated to support STEM education, citizen science, and methodological transparency."
+  },
+  {
+    "objectID": "index.html#reproducible-workflow",
+    "href": "index.html#reproducible-workflow",
+    "title": "Open Urban Air and Meteorological",
+    "section": "🧩 Reproducible Workflow",
+    "text": "🧩 Reproducible Workflow\nThe workflow follows a complete educational and research pipeline:\n\nOpen data acquisition → Madrid air quality & meteorological datasets (2020–2024)\n\nPreprocessing and harmonisation → validation, Parquet conversion, and reproducibility scripts\n\nExploratory analysis → pollutant variability and inter-station correlations\n\nForecasting models → Prophet–LSTM hybrid approach\n\nEducational visualisation → Quarto Notebook for classroom integration\n\nRendered notebook:\n👉 OpenUrbanAir_and_Meteorological_Workflow.html"
+  },
+  {
+    "objectID": "index.html#repository-structure",
+    "href": "index.html#repository-structure",
+    "title": "Open Urban Air and Meteorological",
+    "section": "🗂️ Repository Structure",
+    "text": "🗂️ Repository Structure\nOpenUrbanAirandMeteorological/\n├── docs/                      # Quarto notebook and rendered HTML\n│   ├── OpenUrbanAir_and_Meteorological_Workflow.qmd\n│   ├── OpenUrbanAir_and_Meteorological_Workflow.html\n│   └── images/                # PNG figures used in the notebook\n├── figures_tiff/              # High-resolution TIFF figures for publication\n├── scripts/                   # R scripts for preprocessing and analysis\n├── .gitignore\n├── LICENSE\n├── datos.Rproj\n└── README.md"
+  },
+  {
+    "objectID": "index.html#technologies-used",
+    "href": "index.html#technologies-used",
+    "title": "Open Urban Air and Meteorological",
+    "section": "⚙️ Technologies Used",
+    "text": "⚙️ Technologies Used\n\n\n\nCategory\nTools / Packages\n\n\n\n\nProgramming\nR 4.4 + · Quarto\n\n\nData Handling\ntidyverse · arrow · lubridate\n\n\nVisualisation\nggplot2 · patchwork · leaflet · cowplot\n\n\nForecasting\nprophet · keras · tensorflow · torch\n\n\nReproducibility\nrenv · knitr · rmarkdown"
+  },
+  {
+    "objectID": "index.html#bibliographic-resources",
+    "href": "index.html#bibliographic-resources",
+    "title": "Open Urban Air and Meteorological",
+    "section": "📚 Bibliographic Resources",
+    "text": "📚 Bibliographic Resources\nThe complete set of references cited in the article is available in the file\napplsci-3979500.bib.\nIt contains all bibliographic records used in the research and manuscript\nCitizen Science and STEM Education with R: AI–IoT Forecasting and Reproducible Learning from Open Urban Air Quality Data\n(Applied Sciences, MDPI, 2025).\nThis file follows the Better BibTeX format with active DOIs for interoperability\nwith Zotero, Quarto, and R Markdown workflows.\nA mirrored copy is also archived in the author’s Zotero collection for citation reproducibility:\n➡️ Zotero: applsci-3979500 Collection"
+  },
+  {
+    "objectID": "index.html#educational-use",
+    "href": "index.html#educational-use",
+    "title": "Open Urban Air and Meteorological",
+    "section": "🧭 Educational Use",
+    "text": "🧭 Educational Use\nThis repository supports STEM education by providing: Hands-on examples for environmental informatics and sustainability courses Open-source reproducible R-Quarto workflow Didactic visualisations for citizen science and air quality literacy"
+  },
+  {
+    "objectID": "index.html#citation",
+    "href": "index.html#citation",
+    "title": "Open Urban Air and Meteorological",
+    "section": "📚 Citation",
+    "text": "📚 Citation\nIf you reuse or adapt this resource, please cite as:\n\nCáceres-Tello, J., & Galán-Hernández, J. J. (2025).\nOpenUrbanAirandMeteorological: Citizen Science and STEM Education with R — Teaching Innovation through Open Urban Climate Data.\nApplied Sciences (MDPI).\nAvailable at https://jcaceres-academic.github.io/OpenUrbanAirandMeteorological"
+  },
+  {
+    "objectID": "index.html#license",
+    "href": "index.html#license",
+    "title": "Open Urban Air and Meteorological",
+    "section": "⚖️ License",
+    "text": "⚖️ License\nCode and notebooks: Creative Commons Attribution 4.0 (CC BY 4.0)\nData (if reused): CC0 1.0 Public Domain Dedication"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Open Urban Air and Meteorological",
+    "section": "📬 Contact",
+    "text": "📬 Contact\nJesús Cáceres Tello Department of Computer Systems and Computing Universidad Complutense de Madrid\n📧 jcaceres.academic@gmail.com\n📧 jescacer@ucm.es\n⬅️ Back to my main page\nThis repository supports open, transparent, and reproducible research in environmental data science and STEM education."
+  }
+]
