@@ -6,8 +6,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Gonzalo Mariscal">
+<meta name="author" content="Jesús Cáceres Tello">
+<meta name="author" content="José Javier Galán Hernández">
+<meta name="dcterms.date" content="2026-01-01">
 
-<title>readme</title>
+<title>Reproducible Analytical Notebook – Behavioural and Institutional Drivers of Green Technology Adoption</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,89 +27,250 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="README_files/libs/clipboard/clipboard.min.js"></script>
-<script src="README_files/libs/quarto-html/quarto.js"></script>
-<script src="README_files/libs/quarto-html/popper.min.js"></script>
-<script src="README_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="README_files/libs/quarto-html/anchor.min.js"></script>
-<link href="README_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="README_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="README_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="README_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="README_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="custom.scss">
 </head>
 
-<body class="fullcontent">
+<body class="floating nav-fixed">
 
-<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Behavioural and Institutional Drivers of Green Technology Adoption</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> <i class="bi bi-house" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./article.pdf" target="_blank"> <i class="bi bi-file-earmark-text" role="img">
+</i> 
+<span class="menu-text">Article</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./notebook.html" aria-current="page"> <i class="bi bi-laptop" role="img">
+</i> 
+<span class="menu-text">Notebook</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://doi.org/10.5281/zenodo.18415073" target="_blank"> <i class="bi bi-journal-text" role="img">
+</i> 
+<span class="menu-text">Zenodo</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/jcaceres-academic/extended-tam-green-technology" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#purpose-of-this-notebook" id="toc-purpose-of-this-notebook" class="nav-link active" data-scroll-target="#purpose-of-this-notebook"><span class="header-section-number">1</span> 🧠 Purpose of this notebook</a></li>
+  <li><a href="#analytical-workflow" id="toc-analytical-workflow" class="nav-link" data-scroll-target="#analytical-workflow"><span class="header-section-number">2</span> 🔁 Analytical workflow</a></li>
+  <li><a href="#bibliometric-structure-of-the-field" id="toc-bibliometric-structure-of-the-field" class="nav-link" data-scroll-target="#bibliometric-structure-of-the-field"><span class="header-section-number">3</span> 📊 Bibliometric structure of the field</a></li>
+  <li><a href="#conceptual-framework-extended-tam" id="toc-conceptual-framework-extended-tam" class="nav-link" data-scroll-target="#conceptual-framework-extended-tam"><span class="header-section-number">4</span> 🧭 Conceptual framework: extended TAM</a></li>
+  <li><a href="#educational-and-academic-use" id="toc-educational-and-academic-use" class="nav-link" data-scroll-target="#educational-and-academic-use"><span class="header-section-number">5</span> 🎓 Educational and academic use</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> 📚 References</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
+<!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Reproducible Analytical Notebook</h1>
+<p class="subtitle lead">Extended Technology Acceptance Model for Green Technology Adoption</p>
+</div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Gonzalo Mariscal <a href="mailto:gonzalo.mariscal@universidadeuropea.es" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            European University of Madrid
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jesús Cáceres Tello <a href="mailto:jcaceres.academic@gmail.com" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Complutense University of Madrid
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">José Javier Galán Hernández <a href="mailto:jose.galan@uah.es" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Complutense University of Madrid
+          </p>
+      </div>
+  </div>
 
-<section id="behavioural-and-institutional-drivers-of-green-technology-adoption-an-extended-technology-acceptance-model-for-sustainability-transitions" class="level1">
-<h1>Behavioural and Institutional Drivers of Green Technology Adoption: An Extended Technology Acceptance Model for Sustainability Transitions</h1>
-<p><em>Frontiers in Psychology (Environmental Psychology), under review</em></p>
-<p><a href="https://doi.org/10.5281/zenodo.18415073"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18415073.svg" class="img-fluid"></a></p>
-<p>Open and reproducible research materials supporting the article:</p>
-<hr>
-<section id="project-links" class="level2">
-<h2 class="anchored" data-anchor-id="project-links">🔗 Project links</h2>
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg">
+</a>
+<a href="https://doi.org/10.5281/zenodo.18415073" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18415073-blue.svg">
+</a>
+<br><br>
+<section id="purpose-of-this-notebook" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> 🧠 Purpose of this notebook</h1>
+<p>This notebook provides didactic and reproducible documentation of the analytical steps underpinning the article:</p>
+<p>Behavioural and Institutional Drivers of Green Technology Adoption: An Extended Technology Acceptance Model Framework for Sustainability Transitions (Frontiers in Psychology, under review).</p>
+<p>Rather than presenting empirical datasets or predictive models, the notebook illustrates:</p>
 <ul>
-<li><p>🌐 <strong>Project page (conceptual framework &amp; methodology)</strong><br>
-https://jcaceres-academic.github.io/extended-tam-green-technology/</p></li>
-<li><p>📘 <strong>Reproducible analytical resources</strong><br>
-https://jcaceres-academic.github.io/extended-tam-green-technology/resources.html</p></li>
+<li>how the literature corpus was constructed,</li>
+<li>how bibliometric convergence was analysed,</li>
+<li>how expert-based conceptual structuring was performed,</li>
+<li>how behavioural and institutional dimensions were integrated into an extended TAM.</li>
 </ul>
-<hr>
 </section>
-<section id="project-overview" class="level2">
-<h2 class="anchored" data-anchor-id="project-overview">📘 Project overview</h2>
-<p>This repository provides <strong>open, transparent, and reproducible research materials</strong> supporting the conceptual and analytical development of an <strong>extended Technology Acceptance Model (TAM)</strong> for the study of green technology adoption.</p>
-<p>Rather than offering primary empirical datasets or predictive models, the repository documents the <strong>analytical workflow</strong>, <strong>bibliometric procedures</strong>, and <strong>conceptual structuring</strong> that underpin the article’s theoretical contribution. The materials are intended to support <strong>methodological transparency</strong>, <strong>interpretative clarity</strong>, and <strong>future empirical replication</strong>.</p>
-<p>The project integrates perspectives from <strong>environmental psychology</strong>, <strong>behavioural public policy</strong>, and <strong>sustainability governance</strong>, with a particular focus on institutional dimensions such as trust, legitimacy, transparency, and community support.</p>
-<hr>
+<section id="analytical-workflow" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> 🔁 Analytical workflow</h1>
+<p>This section outlines the analytical logic that structures the development of the extended Technology Acceptance Model proposed in the article. Rather than representing a linear empirical pipeline, the workflow illustrates how bibliometric mapping, expert-based structuring, and conceptual integration were combined to support theory building in a transparent and reproducible manner. The diagram below summarises the main analytical stages and their interconnections</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure_2_MethodologicalWorkflow.png" class="img-fluid figure-img" width="422"></p>
+<figcaption>Conceptual and analytical workflow underlying the extended TAM framework.</figcaption>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="repository-structure" class="level2">
-<h2 class="anchored" data-anchor-id="repository-structure">📁 Repository structure</h2>
+<section id="bibliometric-structure-of-the-field" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> 📊 Bibliometric structure of the field</h1>
+<p>Bibliometric analysis was used as an exploratory tool to examine how green technology adoption is currently framed in the academic literature. By analysing keyword co-occurrence patterns, this step allows the identification of dominant thematic clusters and conceptual proximities, providing an empirical basis for assessing whether behavioural and institutional constructs are already intertwined in existing research.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure_4_Cooccurrence_Network.png" class="img-fluid figure-img" width="458"></p>
+<figcaption>Keyword co-occurrence network derived from the 2021–2025 Scopus corpus.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The observed clustering does not imply causal relationships, but it highlights areas of conceptual convergence that informed the subsequent integration of institutional dimensions into the extended TAM framework.</p>
+</section>
+<section id="conceptual-framework-extended-tam" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> 🧭 Conceptual framework: extended TAM</h1>
+<p>Building on the bibliometric patterns and the structured expert perspectives described in the article, this section presents the conceptual configuration of the extended Technology Acceptance Model. The framework is intended as an analytical lens rather than a statistically tested model, clarifying how individual cognitive beliefs are embedded within broader institutional conditions in sustainability-oriented adoption contexts.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Figure_3_ExtendedTAM.png" class="img-fluid figure-img" width="362"></p>
+<figcaption>Extended Technology Acceptance Model integrating behavioural and institutional dimensions.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The framework situates perceived usefulness and perceived ease of use within institutional conditions shaped by trust, legitimacy, transparency, and community support.</p>
+</section>
+<section id="educational-and-academic-use" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> 🎓 Educational and academic use</h1>
+<p>Beyond supporting the specific article to which it is linked, this notebook has been designed as an educational resource for advanced training in sustainability, behavioural policy, and technology acceptance research. The emphasis is placed on methodological reasoning, conceptual synthesis, and transparency, rather than on software-specific instruction or predictive modelling.</p>
+<p>This notebook can be used in:</p>
 <ul>
-<li><p><code>docs/</code><br>
-Rendered project website (GitHub Pages), including methodological notes and conceptual diagrams.</p></li>
-<li><p><code>scripts/</code><br>
-Reproducible scripts used for bibliometric mapping and semantic analysis (R, VOSviewer workflows).</p></li>
-<li><p><code>figures/</code><br>
-Conceptual figures and analytical visualisations used in the article.</p></li>
-<li><p><code>tables/</code><br>
-Summary tables derived from bibliometric and expert-elicitation procedures.</p></li>
+<li>doctoral seminars on technology acceptance and sustainability transitions,</li>
+<li>courses on behavioural public policy and governance,</li>
+<li>methodology workshops on bibliometric and conceptual synthesis.</li>
 </ul>
-<hr>
+<p>The emphasis is on conceptual reproducibility, not numerical replication.</p>
 </section>
-<section id="reproducibility-and-transparency" class="level2">
-<h2 class="anchored" data-anchor-id="reproducibility-and-transparency">🔁 Reproducibility and transparency</h2>
-<p>This repository follows principles of <strong>open science</strong>, <strong>conceptual reproducibility</strong>, and <strong>methodological transparency</strong>.<br>
-All analytical steps reported in the article are documented to allow other researchers to:</p>
-<ul>
-<li>trace the analytical logic of the study,</li>
-<li>reproduce the bibliometric mapping procedures,</li>
-<li>adapt the conceptual framework to alternative sustainability or policy contexts.</li>
-</ul>
-<p>The materials are provided for <strong>research and educational purposes</strong>, and are not intended to function as a ready-made predictive or decision-support tool.</p>
-<hr>
-</section>
-<section id="license" class="level2">
-<h2 class="anchored" data-anchor-id="license">📜 License</h2>
-<p>This project is released under the <strong>MIT License</strong>, allowing free use, adaptation, and redistribution with appropriate attribution.</p>
-<hr>
-<p>➡️ For a full description of the conceptual framework, analytical strategy, and theoretical context,<br>
-please refer to the <strong>project website</strong> and the associated journal article.</p>
-</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> 📚 References</h1>
+<p>The complete bibliography used in this study is available in the repository as<br>
+<a href="references/references.bib"><code>references/references.bib</code></a>.</p>
+<p>A citable and permanently archived version of this bibliography is available on Zenodo:<br>
+<a href="https://doi.org/10.5281/zenodo.18415073">Zenodo archive (DOI: 10.5281/zenodo.18415073)</a></p>
+
+
 </section>
 
-</main>
-<!-- /main column -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -198,7 +363,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/jcaceres-academic\.github\.io\/extended-tam-green-technology\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -531,4 +696,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

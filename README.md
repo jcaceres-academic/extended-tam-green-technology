@@ -1,10 +1,9 @@
-# Extended TAM for Green Technology Adoption
+# Behavioural and Institutional Drivers of Green Technology Adoption: An Extended Technology Acceptance Model for Sustainability Transitions
+*Frontiers in Psychology (Environmental Psychology), under review*
+
+[![](https://zenodo.org/badge/DOI/10.5281/zenodo.18415073.svg)](https://doi.org/10.5281/zenodo.18415073)
 
 Open and reproducible research materials supporting the article:
-
-**Behavioural and Institutional Drivers of Green Technology Adoption:  
-An Extended Technology Acceptance Model Framework**  
-*Frontiers in Psychology (Environmental Psychology), under review*
 
 ---
 
@@ -22,7 +21,7 @@ An Extended Technology Acceptance Model Framework**
 
 This repository provides **open, transparent, and reproducible research materials** supporting the conceptual and analytical development of an **extended Technology Acceptance Model (TAM)** for the study of green technology adoption.
 
-Rather than offering empirical datasets or predictive models, the repository documents the **analytical workflow**, **bibliometric procedures**, and **conceptual structuring** that underpin the article’s theoretical contribution. The materials are intended to support **methodological transparency**, **interpretative clarity**, and **future empirical replication**.
+Rather than offering primary empirical datasets or predictive models, the repository documents the **analytical workflow**, **bibliometric procedures**, and **conceptual structuring** that underpin the article’s theoretical contribution. The materials are intended to support **methodological transparency**, **interpretative clarity**, and **future empirical replication**.
 
 The project integrates perspectives from **environmental psychology**, **behavioural public policy**, and **sustainability governance**, with a particular focus on institutional dimensions such as trust, legitimacy, transparency, and community support.
 
@@ -65,3 +64,6 @@ This project is released under the **MIT License**, allowing free use, adaptatio
 
 ➡️ For a full description of the conceptual framework, analytical strategy, and theoretical context,  
 please refer to the **project website** and the associated journal article.
+
+
+

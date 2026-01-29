@@ -1,290 +1,104 @@
 ---
-title: "Educational Notebook"
-subtitle: "Citizen Science and STEM Education with R: Forecasting and Reproducible Learning from Open Urban Air Quality Data"
+title: "Reproducible Analytical Notebook"
+subtitle: "Extended Technology Acceptance Model for Green Technology Adoption"
 author:
+  - name: "Gonzalo Mariscal"
+    affiliation: "European University of Madrid"
+    email: "gonzalo.mariscal@universidadeuropea.es"
   - name: "Jesús Cáceres Tello"
-    affiliation: "Universidad Complutense de Madrid"
+    affiliation: "Complutense University of Madrid"
     email: "jcaceres.academic@gmail.com"
   - name: "José Javier Galán Hernández"
-    affiliation: "Universidad Complutense de Madrid"
+    affiliation: "Complutense University of Madrid"
     email: "jose.galan@uah.es"
-date: "2025"
+date: "2026"
 lang: en
-bibliography: ../applsci-3979500.bib
+bibliography: references/references.bib
 link-citations: true
 format:
   html:
     toc: true
     toc-depth: 3
     number-sections: true
-    code-fold: true
+    code-fold: false
+    echo: false
     theme: cosmo
-
 ---
 
+
 ```{=html}
-<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License CC BY 4.0">
+<a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg">
 </a>
-<a href="https://www.r-project.org/" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Made%20with-R-blue.svg" alt="Made with R">
+<a href="https://doi.org/10.5281/zenodo.18415073" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18415073-blue.svg">
 </a>
-<a href="https://quarto.org/" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg" alt="Rendered with Quarto">
-</a>
-<a href="https://doi.org/10.3390/app152212183" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/DOI-10.3390%2Fapp152212183-blue.svg" alt="DOI 10.3390/app152212183">
-</a>
-<a href="https://www.zotero.org/groups/6375403/appliedsciences-2025" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Zotero-Applied%20Sciences--2025-red.svg" alt="Zotero Applied Sciences 2025">
-</a>
-
+<br><br>
 ```
 
+# 🧠 Purpose of this notebook
 
-# 🌍 Introduction
+This notebook provides didactic and reproducible documentation of the analytical steps underpinning the article:
 
-This notebook complements the article *Citizen Science and STEM Education with R: AI–IoT Forecasting and Reproducible Learning from Open Urban Air Quality Data*\
-(Applied Sciences, 2025) and includes reproducible code examples, data harmonisation workflows, and visualisations.
+Behavioural and Institutional Drivers of Green Technology Adoption:
+An Extended Technology Acceptance Model Framework for Sustainability Transitions
+(Frontiers in Psychology, under review).
 
-It reproduces the main analytical workflow implemented in the study and illustrates how R and Quarto can be integrated into **STEM education** to foster data literacy, environmental awareness, and methodological transparency.
+Rather than presenting empirical datasets or predictive models, the notebook illustrates:
 
-------------------------------------------------------------------------
+- how the literature corpus was constructed,
+- how bibliometric convergence was analysed,
+- how expert-based conceptual structuring was performed,
+- how behavioural and institutional dimensions were integrated into an extended TAM.
 
-# 🔁 Reproducible Data Workflow
+# 🔁 Analytical workflow
 
-The complete workflow integrates **open data**, **computational reproducibility**, and **STEM learning**.\
-It can be applied to other urban contexts or courses focusing on environmental informatics, statistical modelling, or sustainability transitions.
+This section outlines the analytical logic that structures the development of the extended Technology Acceptance Model proposed in the article. Rather than representing a linear empirical pipeline, the workflow illustrates how bibliometric mapping, expert-based structuring, and conceptual integration were combined to support theory building in a transparent and reproducible manner. The diagram below summarises the main analytical stages and their interconnections
 
-```{r fig1-pipeline, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 1. Open Data and Methodological Pipeline.'}
-knitr::include_graphics("images/Fig1_Open_Data_and_Methodological_Pipeline.png")
-
+```{r fig.cap='Conceptual and analytical workflow underlying the extended TAM framework.'}
+knitr::include_graphics("images/Figure_2_MethodologicalWorkflow.png")
 ```
 
-------------------------------------------------------------------------
+# 📊 Bibliometric structure of the field
 
-# 🗂️️ Data Sources and Structure
+Bibliometric analysis was used as an exploratory tool to examine how green technology adoption is currently framed in the academic literature. By analysing keyword co-occurrence patterns, this step allows the identification of dominant thematic clusters and conceptual proximities, providing an empirical basis for assessing whether behavioural and institutional constructs are already intertwined in existing research.
 
-## Air Quality Data
-
-Air quality datasets were retrieved from the **Madrid Open Data Portal** (*Portal de Datos Abiertos del Ayuntamiento de Madrid*).\
-Measurements include nitrogen dioxide (NO₂), ozone (O₃), particulate matter (PM₁₀, PM₂.₅), sulphur dioxide (SO₂), and carbon monoxide (CO) recorded hourly across 24 urban stations (2020–2024).
-
-```{r fig2a-map, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 2a. Air quality monitoring stations across the Madrid urban area (2020–2024).'}
-knitr::include_graphics("images/Fig2a_Mapa_Madrid_Final_v7_3.png")
-
+```{r fig.cap='Keyword co-occurrence network derived from the 2021–2025 Scopus corpus.'}
+knitr::include_graphics("images/Figure_4_Cooccurrence_Network.png")
 ```
 
-## Pollutant Coverage
+The observed clustering does not imply causal relationships, but it highlights areas of conceptual convergence that informed the subsequent integration of institutional dimensions into the extended TAM framework.
 
-Each station has different pollutant coverage and measurement frequency, which provides an excellent example for students to explore data completeness and measurement uncertainty in open environmental datasets.
+# 🧭 Conceptual framework: extended TAM
 
-```{r fig2b-coverage, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 2b. Pollutant coverage and measurement frequency across monitoring stations.'}
-knitr::include_graphics("images/Fig2b_Bar_Coverage.png")
+Building on the bibliometric patterns and the structured expert perspectives described in the article, this section presents the conceptual configuration of the extended Technology Acceptance Model. The framework is intended as an analytical lens rather than a statistically tested model, clarifying how individual cognitive beliefs are embedded within broader institutional conditions in sustainability-oriented adoption contexts.
+
+```{r fig.cap='Extended Technology Acceptance Model integrating behavioural and institutional dimensions.'}
+knitr::include_graphics("images/Figure_3_ExtendedTAM.png")
 ```
 
-## Data Processing Workflow
+The framework situates perceived usefulness and perceived ease of use
+within institutional conditions shaped by trust, legitimacy, transparency,
+and community support.
 
-Data from both sources were processed in R through three main stages:
+# 🎓 Educational and academic use
 
-1.  Reading and cleaning monthly CSVs (removing redundant columns and correcting data types).\
-2.  Validating records with confirmed measurements (`VAL` flag).\
-3.  Pivoting and compressing results into `parquet` format for efficiency and consistency.
+Beyond supporting the specific article to which it is linked, this notebook has been designed as an educational resource for advanced training in sustainability, behavioural policy, and technology acceptance research. The emphasis is placed on methodological reasoning, conceptual synthesis, and transparency, rather than on software-specific instruction or predictive modelling.
 
-```{r fig3-pipeline, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 3. Data acquisition, validation, and harmonisation workflow implemented in R.'}
-knitr::include_graphics("images/Fig3_Data_Pipeline.png")
-```
+This notebook can be used in:
 
-------------------------------------------------------------------------
+- doctoral seminars on technology acceptance and sustainability transitions,
+- courses on behavioural public policy and governance,
+- methodology workshops on bibliometric and conceptual synthesis.
 
-# 📊 Exploratory Analysis
-
-This section presents an exploratory analysis of key urban air pollutants using open environmental data. The aim is to characterise the temporal variability and distributional properties of NO₂ and O₃ as a basis for subsequent modelling and correlation analyses. Exploratory statistics are used to identify long-term trends, seasonal patterns, and interannual variability relevant for urban air quality dynamics.
-
-
-## Annual and Seasonal Variability
-
-Figure 4 shows the annual variability of daily mean  **NO₂** and **O₃** concentrations over the 2020–2024 period. NO₂ concentrations display relatively stable distributions with a slight reduction in median values in the most recent years. In contrast, O₃ exhibits higher dispersion and a progressive increase in median and upper-range concentrations, reflecting its pronounced seasonal behaviour.
-
-Overall, the boxplots highlight distinct distributional patterns between the primary pollutant (**NO₂**) and the secondary pollutant (**O₃**), providing a descriptive baseline for the subsequent correlation and modelling analyses.
-
-
-```{r fig4-variability, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 4. Annual variability of NO₂ and O₃ concentrations (2020–2024).'}
-knitr::include_graphics("images/Fig4_NO2_O3_Annual_Variability.png")
-```
-
-## Distribution Analysis
-
-Boxplots provide a powerful visual tool to discuss dispersion, central tendency, and outliers across pollutants.\
-In this context, students learn how descriptive statistics translate into environmental interpretation, reinforcing quantitative reasoning with real data.
-
-```{r fig8-boxplots, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 8. Boxplots of NO₂ and O₃ concentrations across 2020–2024.'}
-knitr::include_graphics("images/Figure8_Boxplots_NO2_O3_2020_2024.png")
-```
-
-------------------------------------------------------------------------
-
-# 🔮 Forecasting with Prophet
-
-Time-series forecasting introduces students to predictive modelling using open environmental data.\
-The **Prophet model** (Taylor & Letham, 2018) was selected for its interpretability, decomposition structure, and robustness to missing values — key features for teaching reproducible forecasting in R.
-
-## Model for NO₂
-
-Students can visualise how additive components — trend, seasonality, and residuals — reveal the influence of human activity and meteorological cycles on pollutant evolution. This exercise supports reproducible experimentation with forecasting horizons, cross-validation, and performance metrics such as RMSE or MAE.
-
-```{r fig5a-prophet-no2, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 5a. Prophet forecast for NO₂ concentrations (2020–2024).'}
-knitr::include_graphics("images/Fig5a_Prophet_NO2_F.png")
-```
-
-```{r fig5b-prophet-O3, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 5b. Prophet forecast for O₃ concentrations (2020–2024).'}
-knitr::include_graphics("images/Fig5b_Prophet_O3_F.png")
-```
-
-------------------------------------------------------------------------
-
-# 🌦 Meteorological Integration
-
-Meteorological factors shape pollutant behaviour and are fundamental in understanding atmospheric processes.\
-By integrating temperature, solar radiation, and wind speed data from **AEMET**, learners can explore multivariate relationships within an urban ecosystem.
-
-## Integration Workflow
-
-```{r fig7-meteo, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 7. Integration workflow of meteorological and air quality data (2020–2024).'}
-knitr::include_graphics("images/Fig7_Meteorological_Data_Integration_Workflow_2020_2024.png")
-```
-
-## Correlation Analysis between Pollutants and Meteorological Variables
-
-To complement the integration workflow, this section computes the **Spearman correlations** between daily concentrations of NO₂ and O₃ and six meteorological parameters (temperature, relative humidity, wind speed, solar radiation, atmospheric pressure, and precipitation) using the validated datasets (2020–2024).
-
-```{r correlation-table, message=FALSE, warning=FALSE}
-library(arrow)
-library(dplyr)
-library(tidyr)
-library(corrr)
-library(knitr)
-library(purrr)
-library(lubridate)
-
-# --- 1. Cargar y combinar archivos anuales ---
-air_files <- list.files(
-  "data/Calidad del Aire_Parquet",
-  pattern = "aire_validados_.*\\.parquet$",
-  full.names = TRUE
-)
-
-met_files <- list.files(
-  "data/Meteorologia_Parquet",
-  pattern = "meteo_validados_.*\\.parquet$",
-  full.names = TRUE
-)
-
-air <- map_dfr(air_files, read_parquet)
-met <- map_dfr(met_files, read_parquet)
-
-# --- 2. Crear variable diaria ---
-air <- air %>%
-  mutate(date = as.Date(FECHA_HORA))
-
-met <- met %>%
-  mutate(date = as.Date(FECHA_HORA))
-
-# --- 3. Agregar diariamente y pivotar a formato ancho ---
-air_wide <- air %>%
-  mutate(MAGNITUD = as.character(MAGNITUD)) %>%
-  group_by(date, MAGNITUD) %>%
-  summarise(valor = mean(VALOR, na.rm = TRUE), .groups = "drop") %>%
-  pivot_wider(names_from = MAGNITUD, values_from = valor)
-
-met_wide <- met %>%
-  mutate(MAGNITUD = as.character(MAGNITUD)) %>%
-  group_by(date, MAGNITUD) %>%
-  summarise(valor = mean(VALOR, na.rm = TRUE), .groups = "drop") %>%
-  pivot_wider(names_from = MAGNITUD, values_from = valor)
-
-# --- 4. Unir por fecha ---
-data_joined <- inner_join(air_wide, met_wide, by = "date")
-
-# --- 5. Renombrar magnitudes (solo las que existen) ---
-data_joined <- data_joined %>%
-  rename_with(
-    ~ recode(
-      .x,
-      `8`  = "NO2",
-      `14` = "O3",
-      `81` = "WS",
-      `83` = "T",
-      `85` = "PRES",
-      `86` = "RH",
-      `87` = "SR",
-      `89` = "PREC"
-    ),
-    .cols = intersect(
-      names(data_joined),
-      c("8", "14", "81", "83", "85", "86", "87", "89")
-    )
-  )
-
-# --- 6. Calcular correlaciones de Spearman (robusto) ---
-vars <- c("NO2", "O3", "T", "RH", "WS", "SR", "PRES", "PREC")
-
-cor_matrix <- data_joined %>%
-  select(any_of(vars)) %>%
-  correlate(method = "spearman") %>%
-  focus(any_of(c("NO2", "O3"))) %>%
-  arrange(term)
-
-# --- 7. Mostrar tabla formateada ---
-kable(
-  cor_matrix %>%
-    mutate(across(where(is.numeric), ~ round(.x, 2))),
-  caption = "Table 4. Spearman correlation coefficients (ρ) between daily pollutant concentrations and meteorological variables (2020–2024).",
-  col.names = c("Variable", "NO₂", "O₃")
-)
-```
-
-------------------------------------------------------------------------
-
-# 🎓 Learning and Reproducibility Framework
-
-Reproducibility is both a scientific and pedagogical value.\
-This framework unifies open data, transparent computation, and educational innovation, reinforcing the culture of **open science**.
-
-```{r fig6-learning, echo=FALSE, fig.align='center', out.width='90%', fig.cap='Fig. 6. Reproducible learning and open-science framework for STEM education.'}
-knitr::include_graphics("images/Fig6_Learning_Reproducibility_Ecosystem.png")
-```
-
-------------------------------------------------------------------------
-
-# 🧑‍🏫 Educational Applications
-
-This Notebook can be directly incorporated into undergraduate or postgraduate STEM courses focused on data analysis, environmental informatics, or sustainability.
-
-**Suggested learning activities:** 1. Reproduce pollutant forecasts with modified training periods.\
-2. Explore correlations between additional meteorological variables.\
-3. Design inquiry-based projects connecting data to local environmental policies.\
-4. Document and publish reproducible reports using Quarto and GitHub.
-
-Through these exercises, students not only practise coding but also embrace scientific integrity and civic engagement through data.
-
-------------------------------------------------------------------------
-
-# 🌐 Repository and Citation
-
-All code, figures, and harmonised datasets are openly available at:\
-<https://github.com/jcaceres-academic/OpenUrbanAirandMeteorological>
-
-When citing this educational resource, please use:
-
-> Cáceres-Tello, J., Galán-Hernández, J. J., Morales Cevallo, M. B., & López-Meneses, E. (2025). Citizen Science and STEM Education with R: AI–IoT Forecasting and Reproducible Learning from Open Urban Air Quality >Data. Applied Sciences, 15(22), 12183. https://doi.org/10.3390/app152212183
-
-This ensures traceability and recognition for open-source academic contributions.
-
-------------------------------------------------------------------------
+The emphasis is on conceptual reproducibility, not numerical replication.
 
 # 📚 References
 
-All cited works are managed through the shared bibliographic file [`applsci-3979500.bib`](../applsci-3979500.bib), which includes all references used in the manuscript and notebook.\
-A public mirror of this bibliography is archived in the author’s Zotero collection:\
-➡️ <https://www.zotero.org/jcaceres_academic/collections/X6RW9UGU>
+The complete bibliography used in this study is available in the repository as  
+[`references/references.bib`](references/references.bib).  
+
+A citable and permanently archived version of this bibliography is available on Zenodo:  
+[Zenodo archive (DOI: 10.5281/zenodo.18415073)](https://doi.org/10.5281/zenodo.18415073)
+
+

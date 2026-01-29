@@ -1,6 +1,6 @@
 ---
-title: "Open Urban Air and Meteorological"
-subtitle: "Citizen Science and STEM Education with R: Forecasting and Reproducible Learning from Open Urban Air Quality Data"
+title: "Behavioural and Institutional Drivers of Green Technology Adoption"
+subtitle: "An Extended Technology Acceptance Model Framework for Sustainability Transitions"
 lang: en
 format:
   html:
@@ -9,8 +9,8 @@ format:
 ---
 
 ```{=html}
-<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg" alt="License CC BY 4.0">
+<a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT License">
 </a>
 <a href="https://www.r-project.org/" target="_blank" rel="noopener">
   <img src="https://img.shields.io/badge/Made%20with-R-blue.svg" alt="Made with R">
@@ -18,123 +18,145 @@ format:
 <a href="https://quarto.org/" target="_blank" rel="noopener">
   <img src="https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg" alt="Rendered with Quarto">
 </a>
-<a href="https://doi.org/10.3390/app152212183" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/DOI-10.3390%2Fapp152212183-blue.svg" alt="DOI 10.3390/app152212183">
-</a>
-<a href="https://www.zotero.org/groups/6375403/appliedsciences-2025" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Zotero-Applied%20Sciences--2025-red.svg" alt="Zotero Applied Sciences 2025">
+<a href="https://doi.org/10.5281/zenodo.18415073" target="_blank" rel="noopener">
+  <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18415073-blue.svg" alt="Zenodo DOI">
 </a>
 <br><br>
-
 ```
-
 
 ## 🧠 Overview
 
-This repository hosts the open, reproducible materials developed for the article submitted to *Applied Sciences (MDPI, 2025)*:
+This repository hosts the **open and reproducible analytical materials** supporting the article submitted to Frontiers in Psychology (Environmental Psychology):
 
-📄 **Article**  
-Cáceres-Tello, J. & Galán-Hernández, J.J. (2025).  
-*Citizen Science and STEM Education with R: Teaching Innovation through Open Urban Climate Data.*  
-**Applied Sciences (MDPI)**.  
-DOI: [10.3390/app152212183](https://doi.org/10.3390/app152212183)
+📄 **Article under review**\
+**Behavioural and Institutional Drivers of Green Technology Adoption:
+An Extended Technology Acceptance Model Framework for Sustainability Transitions**
+
+The project develops a **conceptual extension of the Technology Acceptance Model (TAM)** to examine how institutional trust, legitimacy, transparency, and community support shape citizens’ acceptance of green technologies.
+
+Rather than providing empirical prediction models, the repository documents the **analytical logic, bibliometric mapping, and expert-based conceptual structuring** that underpin the theoretical contribution of the study.
 
 
-The project demonstrates how **R, Quarto, and open environmental datasets** can be integrated to support **STEM education, citizen science, and methodological transparency**.
+## 🧩 Analytical and Conceptual Workflow
 
----
+The analytical strategy follows a structured and transparent sequence:
 
-## 🧩 Reproducible Workflow
+**1. Literature corpus construction**
+Scopus-indexed journal articles (2021–2025) covering technology acceptance, sustainability, and behavioural policy.
 
-The workflow follows a complete educational and research pipeline:
+**2. Bibliometric and semantic mapping**
+Keyword co-occurrence analysis using VOSviewer and R to identify thematic clusters.
 
-1. **Open data acquisition** → Madrid air quality & meteorological datasets (2020–2024)  
-2. **Preprocessing and harmonisation** → validation, Parquet conversion, and reproducibility scripts  
-3. **Exploratory analysis** → pollutant variability and inter-station correlations  
-4. **Forecasting models** → Prophet–LSTM hybrid approach  
-5. **Educational visualisation** → Quarto Notebook for classroom integration  
+**3. Structured expert elicitation**
+Conceptual organisation of behavioural and institutional dimensions using the Analytic Hierarchy Process (AHP).
 
-Rendered notebook:  
-👉 [**OpenUrbanAir_and_Meteorological_Workflow.html**](https://jcaceres-academico.github.io/OpenUrbanAirandMeteorological/OpenUrbanAir_and_Meteorological_Workflow.html)
+**4. Conceptual integration**
+Development of an extended TAM framework adapted to governance-intensive sustainability contexts.
 
----
+```{r fig2-workflow, echo=FALSE, fig.align='center', out.width='85%', fig.cap='Conceptual and analytical workflow underlying the extended TAM framework.'}
+knitr::include_graphics("images/Figure_2_MethodologicalWorkflow.png")
+
+```
+
+## 📊 Bibliometric Structure of the Field
+
+The bibliometric analysis highlights the multidimensional nature of green technology adoption research, where behavioural constructs coexist with institutional and normative considerations.
+
+The co-occurrence network reveals four main thematic clusters, encompassing behavioural adoption models, sustainability and environmental perception, psychosocial and institutional factors, and applied educational contexts.
+
+```{r}
+fig.cap='Keyword co-occurrence network derived from the 2021–2025 Scopus corpus.'
+knitr::include_graphics("images/Figure_4_Cooccurrence_Network.png")
+```
+
+These patterns provide the analytical basis for integrating institutional dimensions into the extended Technology Acceptance Model proposed in the article.
+
+## 🧭 Conceptual Framework: Extended TAM
+
+Building on the bibliometric evidence and expert-based structuring, the study advances an extended Technology Acceptance Model that situates classical cognitive beliefs within broader institutional contexts.
+
+The framework retains perceived usefulness and perceived ease of use, while explicitly incorporating:
+trust, legitimacy, transparency, and community support as contextual conditions shaping adoption decisions.
+
+```{r}
+fig.cap='Extended Technology Acceptance Model integrating behavioural and institutional dimensions.'
+knitr::include_graphics("images/Figure_3_ExtendedTAM.png")
+```
 
 ## 🗂️ Repository Structure
 
-```text
-OpenUrbanAirandMeteorological/
-├── docs/                      # Quarto notebook and rendered HTML
-│   ├── index.html
-│   ├── notebook.html
-│   └── OpenUrbanAir_and_Meteorological_Workflow.html
-├── images/                    # PNG figures used in the notebook
-├── figures_tiff/              # High-resolution TIFF figures for publication
-├── scripts/                   # R scripts for preprocessing and analysis
-├── index.qmd
-├── notebook.qmd
-├── OpenUrbanAir_and_Meteorological_Workflow.qmd
-├── .gitignore
-├── LICENSE
-├── _quarto.yml
-├── datos.Rproj
-└── README.md
-``` 
+``` text
+extended-tam-green-technology/
+├─ docs/                 # Rendered project website (GitHub Pages)
+├─ images/               # PNG figures used in the website and notebook
+├─ figures_tiff/         # High-resolution TIFF figures for journal submission
+├─ scripts/              # Reproducible R scripts (bibliometric and AHP analysis)
+├─ references/
+│  ├─ references.bib     # Complete BibTeX file (archived in Zenodo)
+│  └─ README.md
+├─ notebook.qmd          # Reproducible analytical notebook
+├─ index.qmd
+├─ _quarto.yml
+└─ README.md
+```
 
-## ⚙️ Technologies Used
+## ⚙️ Analytical tools
 
-| Category        | Tools / Packages |
-|-----------------|------------------|
-| **Programming** | [R](https://www.r-project.org/) 4.4 +  · [Quarto](https://quarto.org/) |
-| **Data Handling** | `tidyverse` · `arrow` · `lubridate` |
-| **Visualisation** | `ggplot2` · `patchwork` · `leaflet` · `cowplot` |
-| **Forecasting** | `prophet` · `keras` · `tensorflow` · `torch` |
-| **Reproducibility** | `renv` · `knitr` · `rmarkdown` |
+This project relies on bibliometric and conceptual analysis supported by:
+
+- **R** (bibliometric preprocessing and validation)
+- **VOSviewer** (keyword co-occurrence mapping)
+- **Quarto / GitHub Pages** (transparent documentation)
+
+No predictive or operational models are implemented in this repository.
 
 ## 📚 Bibliographic Resources
 
-The complete set of references cited in the article is available in the file  
-[`applsci-3979500.bib`](./applsci-3979500.bib).  
-It contains all bibliographic records used in the research and manuscript  
-*Citizen Science and STEM Education with R: AI–IoT Forecasting and Reproducible Learning from Open Urban Air Quality Data*  
-(*Applied Sciences*, MDPI, 2025).  
+The complete bibliography cited in the article  
+*Behavioural and Institutional Drivers of Green Technology Adoption:  
+An Extended Technology Acceptance Model Framework for Sustainability Transitions*  
+is openly available in BibTeX format.
 
-This file follows the **Better BibTeX** format with active DOIs for interoperability  
-with Zotero, Quarto, and R Markdown workflows.
+➡️  **Zenodo archive (DOI):** https://doi.org/10.5281/zenodo.18415073  
+➡️ **File:** `references/references.bib`
 
-A mirrored copy is also archived in the author’s Zotero collection for citation reproducibility:  
-➡️ [Zotero: applsci-3979500 Collection](https://www.zotero.org/jcaceres_academic/collections/X6RW9UGU)
+This archive ensures long-term accessibility, citability, and reproducibility of
+the theoretical sources underpinning the conceptual framework.
+
 
 ## 🧭 Educational Use
 
-This repository supports STEM education by providing:
-Hands-on examples for environmental informatics and sustainability courses
-Open-source reproducible R-Quarto workflow
-Didactic visualisations for citizen science and air quality literacy
+This repository is intended for:
+
+- **researchers** working on technology acceptance, sustainability transitions,
+  and behavioural public policy;
+- **postgraduate and doctoral** teaching in environmental psychology,
+  governance, and interdisciplinary sustainability studies;
+- **methodological training** focused on bibliometric analysis and
+  conceptually reproducible research.
+
+The materials support conceptual replication and analytical transparency,
+rather than hands-on computational forecasting exercises.
 
 ## 📚 Citation
 
-If you reuse or adapt this resource, please cite as:
+If you use or refer to this repository, please cite:
 
-> Cáceres-Tello, J., & Galán-Hernández, J. J. (2025).  
-> **OpenUrbanAirandMeteorological: Citizen Science and STEM Education with R — Teaching Innovation through Open Urban Climate Data.**  
-> *Applied Sciences* (MDPI).  
-> Available at [https://jcaceres-academic.github.io/OpenUrbanAirandMeteorological](https://jcaceres-academic.github.io/OpenUrbanAirandMeteorological)
+Cáceres-Tello, J., & Galán-Hernández, J. J. (2026).  
+*Extended TAM for Green Technology Adoption: Reproducible materials*.  
+Zenodo. https://doi.org/10.5281/zenodo.18415073
 
 ## ⚖️ License
 
-Code and notebooks: Creative Commons Attribution 4.0 (CC BY 4.0)
-
-Data (if reused): CC0 1.0 Public Domain Dedication
-
+This repository is released under the **MIT License**, permitting reuse,
+adaptation, and redistribution with attribution.
 
 ## 📬 Contact
 
-Jesús Cáceres Tello
-Department of Computer Systems and Computing
-Universidad Complutense de Madrid
+Jesús Cáceres Tello  
 
-📧 [jcaceres.academic@gmail.com](mailto:jcaceres.academic@gmail.com)  
-📧 [jescacer@ucm.es](mailto:jescacer@ucm.es)
+📧 jcaceres.academic@gmail.com  
+🌐 https://jcaceres-academic.github.io
 
 ⬅️ [Back to my main page](https://jcaceres-academic.github.io)
 
