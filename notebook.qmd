@@ -82,7 +82,7 @@ within institutional conditions shaped by trust, legitimacy, transparency,
 and community support.
 
 # 🎓 Educational and academic use
-
+ 
 Beyond supporting the specific article to which it is linked, this notebook has been designed as an educational resource for advanced training in sustainability, behavioural policy, and technology acceptance research. The emphasis is placed on methodological reasoning, conceptual synthesis, and transparency, rather than on software-specific instruction or predictive modelling.
 
 This notebook can be used in:
