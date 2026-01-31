@@ -25,7 +25,6 @@ format:
     theme: cosmo
 ---
 
-
 ```{=html}
 <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
   <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg">
@@ -40,16 +39,14 @@ format:
 
 This notebook provides didactic and reproducible documentation of the analytical steps underpinning the article:
 
-Behavioural and Institutional Drivers of Green Technology Adoption:
-An Extended Technology Acceptance Model Framework for Sustainability Transitions
-(Frontiers in Psychology, under review).
+Behavioural and Institutional Drivers of Green Technology Adoption: An Extended Technology Acceptance Model Framework for Sustainability Transitions (Frontiers in Psychology, under review).
 
 Rather than presenting empirical datasets or predictive models, the notebook illustrates:
 
-- how the literature corpus was constructed,
-- how bibliometric convergence was analysed,
-- how expert-based conceptual structuring was performed,
-- how behavioural and institutional dimensions were integrated into an extended TAM.
+-   how the literature corpus was constructed,
+-   how bibliometric convergence was analysed,
+-   how expert-based conceptual structuring was performed,
+-   how behavioural and institutional dimensions were integrated into an extended TAM.
 
 # 🔁 Analytical workflow
 
@@ -77,28 +74,24 @@ Building on the bibliometric patterns and the structured expert perspectives des
 knitr::include_graphics("images/Figure_3_ExtendedTAM.png")
 ```
 
-The framework situates perceived usefulness and perceived ease of use
-within institutional conditions shaped by trust, legitimacy, transparency,
-and community support.
+The framework situates perceived usefulness and perceived ease of use within institutional conditions shaped by trust, legitimacy, transparency, and community support.
 
 # 🎓 Educational and academic use
- 
+
 Beyond supporting the specific article to which it is linked, this notebook has been designed as an educational resource for advanced training in sustainability, behavioural policy, and technology acceptance research. The emphasis is placed on methodological reasoning, conceptual synthesis, and transparency, rather than on software-specific instruction or predictive modelling.
 
 This notebook can be used in:
 
-- doctoral seminars on technology acceptance and sustainability transitions,
-- courses on behavioural public policy and governance,
-- methodology workshops on bibliometric and conceptual synthesis.
+-   doctoral seminars on technology acceptance and sustainability transitions,
+-   courses on behavioural public policy and governance,
+-   methodology workshops on bibliometric and conceptual synthesis.
 
 The emphasis is on conceptual reproducibility, not numerical replication.
 
 # 📚 References
 
-The complete bibliography used in this study is available in the repository as  
-[`references/references.bib`](references/references.bib).  
+The complete bibliography used in this study is available in the repository as\
+[`references/references.bib`](references/references.bib).
 
-A citable and permanently archived version of this bibliography is available on Zenodo:  
+A citable and permanently archived version of this bibliography is available on Zenodo:\
 [Zenodo archive (DOI: 10.5281/zenodo.18415073)](https://doi.org/10.5281/zenodo.18415073)
-
-

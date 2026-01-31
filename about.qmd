@@ -6,7 +6,6 @@
 
 Open and reproducible research materials supporting the article:
 
-
 ## 🔗 Project links
 
 -   🌐 **Project page (conceptual framework & methodology)**\
@@ -14,7 +13,6 @@ Open and reproducible research materials supporting the article:
 
 -   📘 **Reproducible analytical resources**\
     https://jcaceres-academic.github.io/extended-tam-green-technology/resources.html
-
 
 ## 📘 Project overview
 
@@ -33,7 +31,7 @@ The project integrates perspectives from **environmental psychology**, **behavio
     Reproducible R scripts used for bibliometric mapping, semantic analysis, and figure generation, including workflows based on VOSviewer outputs.
 
 -   `data/`\
-    Bibliometric datasets used in the study, including raw metadata exported from Scopus and cleaned datasets derived during preprocessing.  
+    Bibliometric datasets used in the study, including raw metadata exported from Scopus and cleaned datasets derived during preprocessing.\
     Processed data files such as `keywords_list.json` contain the keyword co-occurrence network exported from VOSviewer and used as input for the bibliometric visualisations and analyses.
 
 -   `figures_tiff/`\
@@ -44,7 +42,6 @@ The project integrates perspectives from **environmental psychology**, **behavio
 
 -   `references/`\
     Bibliographic references and citation files used in the manuscript and supplementary analyses.
-
 
 ## 🔁 Reproducibility and transparency
 
@@ -59,11 +56,9 @@ The materials are provided for **research and educational purposes**, and are no
 
 All materials are versioned and archived via Zenodo to ensure long-term preservation and citability.
 
-
 ## 📜 License
 
 This project is released under the **MIT License**, allowing free use, adaptation, and redistribution with appropriate attribution.
-
 
 ➡️ For a full description of the conceptual framework, analytical strategy, and theoretical context,\
 please refer to the **project website** and the associated journal article.
