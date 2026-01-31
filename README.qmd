@@ -67,5 +67,3 @@ This project is released under the **MIT License**, allowing free use, adaptatio
 
 ➡️ For a full description of the conceptual framework, analytical strategy, and theoretical context,\
 please refer to the **project website** and the associated journal article.
-
-

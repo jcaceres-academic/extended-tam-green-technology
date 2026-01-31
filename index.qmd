@@ -29,31 +29,25 @@ format:
 This repository hosts the **open and reproducible analytical materials** supporting the article submitted to Frontiers in Psychology (Environmental Psychology):
 
 📄 **Article under review**\
-**Behavioural and Institutional Drivers of Green Technology Adoption:
-An Extended Technology Acceptance Model Framework for Sustainability Transitions**
+**Behavioural and Institutional Drivers of Green Technology Adoption: An Extended Technology Acceptance Model Framework for Sustainability Transitions**
 
 The project develops a **conceptual extension of the Technology Acceptance Model (TAM)** to examine how institutional trust, legitimacy, transparency, and community support shape citizens’ acceptance of green technologies.
 
 Rather than providing empirical prediction models, the repository documents the **analytical logic, bibliometric mapping, and expert-based conceptual structuring** that underpin the theoretical contribution of the study.
 
-
 ## 🧩 Analytical and Conceptual Workflow
 
 The analytical strategy follows a structured and transparent sequence:
 
-**1. Literature corpus construction**
-Scopus-indexed journal articles (2021–2025) covering technology acceptance, sustainability, and behavioural policy.
+**1. Literature corpus construction** Scopus-indexed journal articles (2021–2025) covering technology acceptance, sustainability, and behavioural policy.
 
-**2. Bibliometric and semantic mapping**
-Keyword co-occurrence analysis using VOSviewer and R to identify thematic clusters.
+**2. Bibliometric and semantic mapping** Keyword co-occurrence analysis using VOSviewer and R to identify thematic clusters.
 
-**3. Structured expert elicitation**
-Conceptual organisation of behavioural and institutional dimensions using the Analytic Hierarchy Process (AHP).
+**3. Structured expert elicitation** Conceptual organisation of behavioural and institutional dimensions using the Analytic Hierarchy Process (AHP).
 
-**4. Conceptual integration**
-Development of an extended TAM framework adapted to governance-intensive sustainability contexts.
+**4. Conceptual integration** Development of an extended TAM framework adapted to governance-intensive sustainability contexts.
 
-```{r fig2-workflow, echo=FALSE, fig.align='center', out.width='85%', fig.cap='Conceptual and analytical workflow underlying the extended TAM framework.'}
+```{r fig2-index, echo=FALSE, fig.align='center', out.width='85%', fig.cap='Conceptual and analytical workflow underlying the extended TAM framework.'}
 knitr::include_graphics("images/Figure_2_MethodologicalWorkflow.png")
 
 ```
@@ -64,8 +58,7 @@ The bibliometric analysis highlights the multidimensional nature of green techno
 
 The co-occurrence network reveals four main thematic clusters, encompassing behavioural adoption models, sustainability and environmental perception, psychosocial and institutional factors, and applied educational contexts.
 
-```{r}
-fig.cap='Keyword co-occurrence network derived from the 2021–2025 Scopus corpus.'
+```{r fig4-index, echo=FALSE, fig.align='center', out.width='85%', fig.cap='Keyword co-occurrence network derived from the 2021–2025 Scopus corpus.'}
 knitr::include_graphics("images/Figure_4_Cooccurrence_Network.png")
 ```
 
@@ -75,11 +68,9 @@ These patterns provide the analytical basis for integrating institutional dimens
 
 Building on the bibliometric evidence and expert-based structuring, the study advances an extended Technology Acceptance Model that situates classical cognitive beliefs within broader institutional contexts.
 
-The framework retains perceived usefulness and perceived ease of use, while explicitly incorporating:
-trust, legitimacy, transparency, and community support as contextual conditions shaping adoption decisions.
+The framework retains perceived usefulness and perceived ease of use, while explicitly incorporating: trust, legitimacy, transparency, and community support as contextual conditions shaping adoption decisions.
 
-```{r}
-fig.cap='Extended Technology Acceptance Model integrating behavioural and institutional dimensions.'
+```{r fig3-index, echo=FALSE, fig.align='center', out.width='85%', fig.cap='Extended Technology Acceptance Model integrating behavioural and institutional dimensions.'}
 knitr::include_graphics("images/Figure_3_ExtendedTAM.png")
 ```
 
@@ -104,58 +95,51 @@ extended-tam-green-technology/
 
 This project relies on bibliometric and conceptual analysis supported by:
 
-- **R** (bibliometric preprocessing and validation)
-- **VOSviewer** (keyword co-occurrence mapping)
-- **Quarto / GitHub Pages** (transparent documentation)
+-   **R** (bibliometric preprocessing and validation)
+-   **VOSviewer** (keyword co-occurrence mapping)
+-   **Quarto / GitHub Pages** (transparent documentation)
 
 No predictive or operational models are implemented in this repository.
 
 ## 📚 Bibliographic Resources
 
-The complete bibliography cited in the article  
-*Behavioural and Institutional Drivers of Green Technology Adoption:  
-An Extended Technology Acceptance Model Framework for Sustainability Transitions*  
+The complete bibliography cited in the article\
+*Behavioural and Institutional Drivers of Green Technology Adoption:\
+An Extended Technology Acceptance Model Framework for Sustainability Transitions*\
 is openly available in BibTeX format.
 
-➡️  **Zenodo archive (DOI):** https://doi.org/10.5281/zenodo.18415073  
+➡️ **Zenodo archive (DOI):** https://doi.org/10.5281/zenodo.18415073\
 ➡️ **File:** `references/references.bib`
 
-This archive ensures long-term accessibility, citability, and reproducibility of
-the theoretical sources underpinning the conceptual framework.
-
+This archive ensures long-term accessibility, citability, and reproducibility of the theoretical sources underpinning the conceptual framework.
 
 ## 🧭 Educational Use
 
 This repository is intended for:
 
-- **researchers** working on technology acceptance, sustainability transitions,
-  and behavioural public policy;
-- **postgraduate and doctoral** teaching in environmental psychology,
-  governance, and interdisciplinary sustainability studies;
-- **methodological training** focused on bibliometric analysis and
-  conceptually reproducible research.
+-   **researchers** working on technology acceptance, sustainability transitions, and behavioural public policy;
+-   **postgraduate and doctoral** teaching in environmental psychology, governance, and interdisciplinary sustainability studies;
+-   **methodological training** focused on bibliometric analysis and conceptually reproducible research.
 
-The materials support conceptual replication and analytical transparency,
-rather than hands-on computational forecasting exercises.
+The materials support conceptual replication and analytical transparency, rather than hands-on computational forecasting exercises.
 
 ## 📚 Citation
 
 If you use or refer to this repository, please cite:
 
-Cáceres-Tello, J., & Galán-Hernández, J. J. (2026).  
-*Extended TAM for Green Technology Adoption: Reproducible materials*.  
+Cáceres-Tello, J., & Galán-Hernández, J. J. (2026).\
+*Extended TAM for Green Technology Adoption: Reproducible materials*.\
 Zenodo. https://doi.org/10.5281/zenodo.18415073
 
 ## ⚖️ License
 
-This repository is released under the **MIT License**, permitting reuse,
-adaptation, and redistribution with attribution.
+This repository is released under the **MIT License**, permitting reuse, adaptation, and redistribution with attribution.
 
 ## 📬 Contact
 
-Jesús Cáceres Tello  
+Jesús Cáceres Tello
 
-📧 jcaceres.academic@gmail.com  
+📧 jcaceres.academic\@gmail.com\
 🌐 https://jcaceres-academic.github.io
 
 ⬅️ [Back to my main page](https://jcaceres-academic.github.io)
