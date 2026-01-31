@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Behavioural and Institutional Drivers of Green Technology Adoption"
-  site-url: about.html
+  site-url: https://jcaceres-academic.github.io/extended-tam-green-technology/about.html
   description: "An Extended Technology Acceptance Model Framework for Sustainability Transitions"
   page-navigation: true
   search: false
