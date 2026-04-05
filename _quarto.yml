@@ -17,7 +17,7 @@ website:
         href: index.html
       - icon: file-earmark-text
         text: "Article" 
-        href: paper/Frontiers_Psychology_Manuscript_2025.pdf
+        href: https://doi.org/10.3389/fpsyg.2026.1723942
         target: "_blank"
       - icon: laptop
         text: "Notebook"

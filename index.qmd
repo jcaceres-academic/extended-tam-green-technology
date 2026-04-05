@@ -9,19 +9,29 @@ format:
 ---
 
 ```{=html}
-<a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="MIT License">
-</a>
-<a href="https://www.r-project.org/" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Made%20with-R-blue.svg" alt="Made with R">
-</a>
-<a href="https://quarto.org/" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/Rendered_with-Quarto-4A90E2.svg" alt="Rendered with Quarto">
-</a>
-<a href="https://doi.org/10.5281/zenodo.18415073" target="_blank" rel="noopener">
-  <img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18415073-blue.svg" alt="Zenodo DOI">
-</a>
-<br><br>
+<div style="display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-bottom:10px;">
+
+  <a href="https://doi.org/10.3389/fpsyg.2026.1723942" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/DOI-10.3389%2Ffpsyg.2026-blue?style=flat-square&logo=doi&logoColor=white">
+  </a>
+
+  <a href="https://doi.org/10.5281/zenodo.18415073" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Zenodo-10.5281%2Fzenodo.18415073-0A66C2?style=flat-square&logo=zenodo&logoColor=white">
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/License-MIT-6c757d?style=flat-square">
+  </a>
+
+  <a href="https://www.r-project.org/" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/Made%20with-R-276DC3?style=flat-square&logo=r&logoColor=white">
+  </a>
+
+  <a href="https://quarto.org/" target="_blank" rel="noopener">
+    <img src="https://img.shields.io/badge/Rendered%20with-Quarto-4A90E2?style=flat-square">
+  </a>
+
+</div><br>
 ```
 
 ## 🧠 Overview
@@ -125,11 +135,13 @@ The materials support conceptual replication and analytical transparency, rather
 
 ## 📚 Citation
 
+If you use this work, please cite the article:
+
+> Mariscal, G., Cáceres-Tello, J., & Galán-Hernández, J. J. (2026). Behavioural and institutional drivers of green technology adoption: an extended technology acceptance model for sustainability transitions. *Frontiers in Psychology, 17*, 1723942. https://doi.org/10.3389/fpsyg.2026.1723942
+
 If you use or refer to this repository, please cite:
 
-Cáceres-Tello, J., & Galán-Hernández, J. J. (2026).\
-*Extended TAM for Green Technology Adoption: Reproducible materials*.\
-Zenodo. https://doi.org/10.5281/zenodo.18415073
+> Mariscal, G., Cáceres-Tello, J., & Galán-Hernández, J. J. (2026). *Extended TAM for Green Technology Adoption: Reproducible materials*. Zenodo. https://doi.org/10.5281/zenodo.18415073
 
 ## ⚖️ License
 
