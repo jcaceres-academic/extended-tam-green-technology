@@ -8,9 +8,18 @@ website:
   description: "An Extended Technology Acceptance Model Framework for Sustainability Transitions"
   page-navigation: true
   search: false
+  
   navbar:
     background: "#7A0026"
     pinned: true        # 🔒 mantiene la barra fija al hacer scroll
+    title: false
+    
+    left:
+      - icon: mortarboard-fill
+        text: "Academic Home"
+        href: https://jcaceres-academic.github.io/
+        target: "_self"
+    
     right:
       - icon: house
         text: "Home"
@@ -34,7 +43,7 @@ website:
 format:
   html:
     theme: cosmo
-    css: custom.scss
+    css: styles.css
     toc: true
     toc-location: left
     toc-title: "On this page"
